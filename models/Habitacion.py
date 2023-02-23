@@ -13,13 +13,13 @@ class Habitacion():
         self.tipo_camas = ""
 
     def tiene_aire(self):
-        return "Si." if self.aire_acondicionado else "No."
+        return "Yes." if self.aire_acondicionado else "Not."
 
     def tiene_calentador(self):
-        return "Si." if self.calentador else "No."
+        return "Yes." if self.calentador else "Not."
 
     def es_vip(self):
-        return "Si." if self.vip else "No."
+        return "Yes." if self.vip else "Not."
 
     def __str__(self) -> str:
         return "--------------------------\nhab-{}: \nCantidad de personas: {} \nCantidad de camas: {} \nAire Acondicionado: {} \nVIP: {} \nCalentador: {} \nTipo Camas: {}\n--------------------------".format(self.id, self.cantidad_personas, self.cantidad_camas, self.tiene_aire(), self.es_vip(), self.tiene_calentador(), self.tipo_camas)
